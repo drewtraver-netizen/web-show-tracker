@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Show Tracker</title>
+  <meta name="description" content="Privacy Policy for Show Tracker — iOS app for tracking TV shows and movies." />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .policy-body { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
-    .policy-body h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
-    .policy-date { font-size: 13px; color: var(--muted); margin-bottom: 48px; opacity: 0.7; }
-    .policy-body h2 { font-size: 20px; font-weight: 700; margin: 40px 0 12px; color: #fff; }
-    .policy-body p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 16px; }
-    .highlight-box { background: var(--panel); border: 1px solid var(--border); border-left: 4px solid var(--green); border-radius: 10px; padding: 20px 24px; margin: 32px 0; }
-    .highlight-box p { margin: 0; font-size: 16px; color: var(--text); font-weight: 500; }
+    .privacy-body { max-width: 800px; margin: 0 auto; padding: 72px 24px 96px; }
+    .privacy-body h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
+    .privacy-sub { font-size: 17px; color: var(--muted); margin-bottom: 56px; }
+    .privacy-body h2 { font-size: 20px; font-weight: 700; margin: 48px 0 16px; color: #fff; }
+    .privacy-body p, .privacy-body li { font-size: 15px; color: var(--muted); line-height: 1.75; }
+    .privacy-body ul { margin: 0 0 16px 20px; }
+    .privacy-body ul li { margin-bottom: 6px; }
+    .privacy-body a { color: var(--accent); }
+    .privacy-body a:hover { color: var(--accent-hover); }
   </style>
 </head>
 <body>
@@ -31,43 +34,51 @@
     </div>
   </nav>
 
-  <main class="policy-body">
+  <main class="privacy-body">
     <h1>Privacy Policy</h1>
-    <p class="policy-date">Last updated: March 2026</p>
+    <p class="privacy-sub">Last updated: March 27, 2026</p>
 
-    <div class="highlight-box">
-      <p>✅ Show Tracker collects <strong>no personal information</strong>. Your data stays on your device and in your own iCloud account. Nothing is sent to us or any third party.</p>
-    </div>
+    <p>Show Tracker ("the app") is a personal tool for tracking TV shows and movies on iPhone and iPad. Your privacy matters. This policy explains what data the app collects, how it's used, and how it's stored.</p>
 
-    <h2>What Information We Collect</h2>
-    <p>We collect no personally identifiable information (PII) of any kind. Show Tracker does not ask for, store, or transmit your name, email address, or any other personal data.</p>
+    <h2>Data We Collect</h2>
+    <p>Show Tracker does not collect any personal information. The app does not require an account, does not track you, and does not share your data with third parties.</p>
 
-    <h2>Data Storage</h2>
-    <p>All data you enter — your show list, watched episodes, and preferences — is stored locally on your device and synced to your personal iCloud account via NSUbiquitousKeyValueStore. This data is owned entirely by you and is never accessible to us.</p>
+    <h2>Data Stored on Your Device &amp; iCloud</h2>
+    <p>All your show and movie data — including your watchlist, watched episodes, and favorites — is stored locally on your device and synced to your personal iCloud account via CloudKit. This data is:</p>
+    <ul>
+      <li>Stored under your own Apple ID</li>
+      <li>Not accessible to us or anyone else</li>
+      <li>Governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a></li>
+    </ul>
 
-    <h2>iCloud Sync</h2>
-    <p>Show Tracker uses Apple's iCloud key-value storage to sync your data across your own devices. This sync happens between your devices only, through your Apple ID. We have no access to your iCloud data.</p>
+    <h2>Third-Party Services</h2>
+    <p>Show Tracker uses the following third-party services to fetch show metadata, episode lists, poster images, and streaming provider information:</p>
+    <ul>
+      <li><strong>The Movie Database (TMDB)</strong> — <a href="https://www.themoviedb.org/privacy-policy" target="_blank" rel="noopener">TMDB Privacy Policy</a></li>
+    </ul>
+    <p>These requests are made when you search for or refresh a show or movie. No personally identifiable information is sent to these services.</p>
 
-    <h2>Third-Party Data</h2>
-    <p>Show Tracker fetches show metadata (titles, episode lists, streaming providers, posters) from The Movie Database (TMDB). This is a read-only API call used to populate the app with show information. No personal data is sent to TMDB.</p>
-
-    <h2>Analytics &amp; Tracking</h2>
-    <p>Show Tracker does not include any analytics SDK, crash reporter, or advertising framework. We do not track how you use the app.</p>
+    <h2>Analytics</h2>
+    <p>This website uses Google Analytics to understand general traffic patterns (page views, device types, referral sources). No personal data from the app is sent to Google Analytics. You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google's opt-out tool</a>.</p>
 
     <h2>Children's Privacy</h2>
-    <p>Show Tracker is not directed at children under 13. We do not knowingly collect any information from children.</p>
+    <p>Show Tracker does not knowingly collect any information from children under 13. The app does not collect personal data from any users.</p>
 
     <h2>Changes to This Policy</h2>
-    <p>If we make changes to this privacy policy, we will update the date above. Since we collect no personal data, changes are expected to be infrequent.</p>
+    <p>If this policy changes, the updated version will be posted here with a new "Last updated" date.</p>
 
     <h2>Contact</h2>
-    <p>Questions? Contact us at <a href="mailto:drewsupport@icloud.com">drewsupport@icloud.com</a></p>
+    <p>Questions? Reach out at <a href="mailto:drewsupport@icloud.com">drewsupport@icloud.com</a>.</p>
   </main>
 
   <footer class="footer">
     <div class="container">
       <span>© 2026 Show Tracker</span>
-      <span><a href="mailto:drewsupport@icloud.com">drewsupport@icloud.com</a></span>
+      <span style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:drewsupport@icloud.com">drewsupport@icloud.com</a>
+      </span>
     </div>
   </footer>
 
