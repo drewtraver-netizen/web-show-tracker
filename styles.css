@@ -149,27 +149,35 @@ a:hover { color: var(--accent-hover); }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Hero phone mockup stack */
+/* The hero stack: TWO phones, both legible (Drew, 2026-09-22: "the top is
+   missing"). The box was 320px wide with the front phone at left:90px, so all but
+   a ~90px sliver of the REAR phone was covered — it read as an asset that had not
+   loaded rather than as a second device behind the first. The box is wider than
+   the two shots need, the rear sits fully inside it, and the overlap is a corner
+   rather than most of a phone. Shots keep their aspect (1242x2688), so the box is
+   tall enough to hold them whole. */
 .hero-screenshots {
   flex: 0 0 auto;
   position: relative;
-  width: 320px;
-  height: 460px;
+  width: 430px;
+  height: 540px;
 }
 .phone-shot {
   position: absolute;
-  width: 220px;
+  width: 210px;
+  height: auto;
   border-radius: 32px;
   box-shadow: 0 24px 64px rgba(0,0,0,0.7);
 }
 .shot-back {
-  top: 0;
+  top: 10px;
   left: 0;
-  opacity: 0.7;
-  transform: rotate(-4deg);
+  opacity: 0.9;
+  transform: rotate(-5deg);
 }
 .shot-front {
-  top: 40px;
-  left: 90px;
+  top: 55px;
+  left: 175px;
   z-index: 2;
   transform: rotate(3deg);
 }
@@ -410,9 +418,10 @@ a:hover { color: var(--accent-hover); }
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
   .hero-inner { flex-direction: column; gap: 48px; }
-  .hero-screenshots { width: 280px; height: 400px; }
-  .phone-shot { width: 190px; }
-  .shot-front { left: 80px; top: 30px; }
+  .hero-screenshots { width: 330px; height: 440px; }
+  .phone-shot { width: 165px; }
+  .shot-back { top: 8px; }
+  .shot-front { left: 135px; top: 45px; }
   .feature-row,
   .feature-row.reverse { flex-direction: column; gap: 36px; }
   .feature-img { width: 240px; margin: 0 auto; }
@@ -426,7 +435,8 @@ a:hover { color: var(--accent-hover); }
   .btn-primary, .btn-ghost { text-align: center; }
   .footer .container { justify-content: center; text-align: center; }
   .nav-links { gap: 16px; }
-  .hero-screenshots { width: 240px; height: 340px; }
-  .phone-shot { width: 160px; }
-  .shot-front { left: 68px; top: 24px; }
+  .hero-screenshots { width: 300px; height: 390px; }
+  .phone-shot { width: 148px; }
+  .shot-back { top: 6px; }
+  .shot-front { left: 122px; top: 40px; }
 }
